@@ -1,49 +1,40 @@
 .wrap {
     width: 720px;
     max-width: 95vw;
+    margin: 0 auto;
 }
-
 svg {
     width: 100%;
     height: auto;
     display: block;
 }
-
-.label1, 
-.label2,
-.label3,
-.label4,
-.label5 {
+.label {
     font-size: 18px;
+    font-family: Arial, sans-serif;
+    fill: #000;
     user-select: none;
 }
-
-.hit {
-    fill: transparent;
-    cursor: pointer;
-}
-
-/* vùng click */
 .stroke {
-    stroke: #000;
-    stroke-width: 2px;
+    /* stroke: #000; */
+    stroke-width: 1px;
     fill: #fff;
 }
 
 .centerRect {
     fill: #dbeeff;
 }
-
-.hit:hover~.hoverable {
-    filter: brightness(0.95);
+.hit {
+    fill: transparent;
+    cursor: pointer;
+    transition: fill 0.25s ease;
 }
+.hit:hover {
+    fill: rgba(116, 162, 208, 0.396);
+    border: 1px solid #000;
+    stroke: #837f7f;
 
-/* ví dụ hover */
-
-.label1:hover, 
-.label2:hover,
-.label3:hover,
-.label4:hover,
-.label5:hover {
-    background-color: #dbeeff;
+}
+.stroke:hover {
+    stroke: #837f7f;
+    stroke-width: 2.5px;
 }
