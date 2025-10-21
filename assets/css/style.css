@@ -1,3 +1,6 @@
+* {
+font-family: "Roboto", sans-serif;
+}
 .wrap {
     width: 720px;
     max-width: 95vw;
@@ -10,7 +13,6 @@ svg {
 }
 .label {
     font-size: 18px;
-    font-family: Arial, sans-serif;
     fill: #000;
     user-select: none;
 }
@@ -19,10 +21,6 @@ svg {
     stroke-width: 1px;
     fill: #fff;
 }
-
-.centerRect {
-    fill: #dbeeff;
-}
 .hit {
     fill: transparent;
     cursor: pointer;
@@ -30,11 +28,12 @@ svg {
 }
 .hit:hover {
     fill: rgba(116, 162, 208, 0.396);
-    border: 1px solid #000;
     stroke: #837f7f;
-
+    stroke-width: 1px;
 }
 .stroke:hover {
     stroke: #837f7f;
-    stroke-width: 2.5px;
+    stroke-width: 1px;
+    fill: #dbeeff;
+    cursor: pointer;
 }
